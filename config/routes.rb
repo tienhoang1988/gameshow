@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   root 'game#index'
 
+  get '/test', to: "game#test", as: :test
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
